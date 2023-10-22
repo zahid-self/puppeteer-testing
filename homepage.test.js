@@ -1,9 +1,7 @@
 const puppeteer = require("puppeteer");
 
 test('Confirm text on page', async() => { 
-    const browser = await puppeteer.launch({
-        headless: 'new'
-    });
+    const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']});
 
     try {
         const page = await browser.newPage();

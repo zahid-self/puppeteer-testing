@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 
 test('Confirm text on page', async() => { 
-    const browser = await puppeteer.launch({ignoreDefaultArgs: ['--disable-extensions']});
+    const browser = await puppeteer.launch({ignoreDefaultArgs: ['–no-sandbox','–disable-setuid-sandbox']});
 
     try {
         const page = await browser.newPage();

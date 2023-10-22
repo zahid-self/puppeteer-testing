@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/repo
     docker:
-      - image: circleci/node:18.17.0
+      - image: circleci/node:18.18-browsers
     steps:
       - checkout
       - run:
